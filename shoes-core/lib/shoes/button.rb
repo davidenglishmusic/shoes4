@@ -15,6 +15,7 @@ class Shoes
       @parent.add_child self
       @gui = Shoes.configuration.backend_for self, @parent.gui
       register_click blk
+      update_visibility
     end
 
     def focus

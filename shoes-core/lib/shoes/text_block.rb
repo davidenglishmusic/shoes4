@@ -21,6 +21,7 @@ class Shoes
       handle_styles @style
       @gui = Shoes.backend_for self
       @parent.add_child self
+      update_visibility
 
       # Important to use accessor and do this after the backend exists!
       self.text = Array(text)

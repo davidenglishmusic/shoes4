@@ -14,6 +14,7 @@ class Shoes
       @parent.add_child self
       @gui = Shoes.configuration.backend_for self, @parent.gui
       change(&blk) if blk
+      update_visibility
     end
 
     def state=(value)

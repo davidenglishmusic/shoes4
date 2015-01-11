@@ -44,6 +44,7 @@ class Shoes
       proxy_array = Shoes::ProxyArray.new(items, @gui)
       @style[:items] = proxy_array
       change(&blk) if blk
+      update_visibility
 
       choose @style[:choose]
     end

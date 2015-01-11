@@ -18,6 +18,7 @@ class Shoes
       @parent.add_child self
       @gui = Shoes.configuration.backend_for self, @parent.gui
       eval_block blk
+      update_visibility
       contents_alignment
     end
 
